@@ -1,0 +1,21 @@
+<div class="mat-step-icon-state-{{state}} mat-step-icon" [class.mat-step-icon-selected]="selected">
+    <div class="mat-step-icon-content">
+      <ng-container>
+        <span>{{_getDefaultTextForState(state)}}</span>
+      </ng-container>
+    </div>
+  </div>
+  <div class="mat-step-label"
+       [class.mat-step-label-active]="active"
+       [class.mat-step-label-selected]="selected"
+       [class.mat-step-label-error]="state == 'error'">
+
+    <div class="mat-step-text-label" *ngIf="_templateLabel()">
+      <ng-container [ngTemplateOutlet]="_templateLabel()"></ng-container>
+    </div>
+    <!-- If there is no label template, fall back to the text label. -->
+    <div class="mat-step-text-label" *ngIf="_stringLabel()">{{label}}</div>
+
+  </div>
+  
+  

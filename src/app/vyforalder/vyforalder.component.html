@@ -1,0 +1,14 @@
+
+<button class="test" (click)="logga()">
+    Show ViewChildren!
+</button>
+
+<!-- <app-vybarn>
+    <div #innehallsbarn>mira</div>
+    <div appDirre>dirren</div>
+    <app-pointless></app-pointless>
+    <ng-template matStepLabel>Fill out your name</ng-template>
+    <ng-template cdkStepLabel>Ange namn</ng-template>  
+</app-vybarn> -->
+
+<ng-container [ngTemplateOutlet]="barn.first.content"></ng-container>

@@ -1,0 +1,21 @@
+<div class="mat-horizontal-stepper-header-container">
+    <ng-container *ngFor="let step of steps; let i = index; let isLast = last">
+      <app-steghuvud class="mat-step-header mat-horizontal-stepper-header"
+                       (click)="step.select()"
+                       id="_getStepLabelId(i)"
+                       [attr.aria-posinset]="i + 1"
+                       [attr.aria-setsize]="steps.length"
+                       attr.aria-controls="_getStepContentId(i)"
+                       [attr.aria-selected]="selectedIndex == i"
+                       attr.aria-label="step.ariaLabel || null"
+                       attr.aria-labelledby="(!step.ariaLabel && step.ariaLabelledby) ? step.ariaLabelledby : null"
+                       [index]="i"
+                       state="number"
+                       [label]="step.content"
+                       [selected]="selectedIndex === i"
+                       [active]="step.completed || selectedIndex === i"
+                       [optional]="step.optional">
+      </app-steghuvud>
+      <div *ngIf="!isLast" class="mat-stepper-horizontal-line"></div>
+    </ng-container>
+  </div>
