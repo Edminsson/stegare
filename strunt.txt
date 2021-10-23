@@ -1,2 +1,3 @@
 Ändring gjord lokalt som sen pushats.
 Ändrat i github.
+Ändrar lokalt.
