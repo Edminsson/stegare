@@ -16,7 +16,7 @@ import { MatHorizontalStepper, MatStep, MatStepper } from '@angular/material/ste
 })
 export class HorizontalStepperComponent extends MatHorizontalStepper implements OnInit {
   ngOnInit(): void {
-    console.log('hej', this);
+    console.log('hejsan', this);
   }
 
 }
