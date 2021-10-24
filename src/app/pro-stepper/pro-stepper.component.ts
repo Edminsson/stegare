@@ -20,7 +20,7 @@ export class ProStepperComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     // debugger;
-    console.log('Stepper Content', this.myStepper.steps.first.content);
+    console.log('Stepper Content ', this.myStepper.steps.first.content);
     setTimeout(() => {
       this.innehall = this.myStepper.steps.first.content;
       console.log('Innehall', this.innehall);
@@ -34,6 +34,7 @@ export class ProStepperComponent implements OnInit, AfterViewInit {
     this.secondFormGroup = this.formBuilder.group({
       secondCtrl: ['', Validators.required]
     });
+    
   }
 
 
