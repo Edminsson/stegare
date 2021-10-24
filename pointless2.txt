@@ -1,2 +1,4 @@
 another pointless file
 ändrar lokalt samtidigt som jag ändrar i github.
+another pointless file.
+Ändrar direkt i Github.
